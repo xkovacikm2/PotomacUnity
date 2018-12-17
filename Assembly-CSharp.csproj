@@ -54,9 +54,12 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\Scripts\BounceRocket.cs" />
     <Compile Include="Assets\Scripts\BounceWall.cs" />
-    <Compile Include="Assets\Scripts\RocketThrust.cs" />
+    <Compile Include="Assets\Scripts\ClickHandlers\StartStop.cs" />
+    <Compile Include="Assets\Scripts\Rockets\BounceRocket.cs" />
+    <Compile Include="Assets\Scripts\Rockets\RestartRocket.cs" />
+    <Compile Include="Assets\Scripts\Rockets\RocketThrust.cs" />
+    <None Include="Assets\Imported\Missile\Doc\ReadMe.txt" />
     <Reference Include="Unity.TextMeshPro.Editor">
       <HintPath>C:/Users/Z003ZR2J/Documents/personal/navph/potomac/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
     </Reference>
