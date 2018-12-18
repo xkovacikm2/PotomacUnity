@@ -54,14 +54,20 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\Imported\FireExplosionVFX\Scripts\FxSplash.cs" />
+    <Compile Include="Assets\Imported\FireExplosionVFX\Scripts\LaunchEffect.cs" />
     <Compile Include="Assets\Scripts\BounceWall.cs" />
+    <Compile Include="Assets\Scripts\BuildingController.cs" />
     <Compile Include="Assets\Scripts\CameraController.cs" />
     <Compile Include="Assets\Scripts\ClickHandlers\IOptionalActionable.cs" />
+    <Compile Include="Assets\Scripts\ClickHandlers\IRemovable.cs" />
     <Compile Include="Assets\Scripts\ClickHandlers\PlaceGameObject.cs" />
+    <Compile Include="Assets\Scripts\ClickHandlers\RemovableWall.cs" />
     <Compile Include="Assets\Scripts\ClickHandlers\RemoveGameObject.cs" />
     <Compile Include="Assets\Scripts\ClickHandlers\RotateGameObject.cs" />
     <Compile Include="Assets\Scripts\ClickHandlers\StartStop.cs" />
     <Compile Include="Assets\Scripts\Rockets\BounceRocket.cs" />
+    <Compile Include="Assets\Scripts\Rockets\ExplodeRocket.cs" />
     <Compile Include="Assets\Scripts\Rockets\RestartRocket.cs" />
     <Compile Include="Assets\Scripts\Rockets\RocketThrust.cs" />
     <None Include="Assets\Imported\Missile\Doc\ReadMe.txt" />

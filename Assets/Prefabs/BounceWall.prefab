@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: 8544655690897281852}
   - component: {fileID: 8544655690897281827}
   - component: {fileID: 8544655690897281824}
+  - component: {fileID: 7200038730200071308}
   m_Layer: 0
   m_Name: BounceWall
   m_TagString: Untagged
@@ -121,3 +122,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0e097c57a32113942949c7d0b2371bfa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &7200038730200071308
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8544655690897281853}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a0ada2e6d416fdd44b2807fddf489659, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  highlightMaterial: {fileID: 2100000, guid: 84ff0d7210feca540b0c74c302bf0599, type: 2}

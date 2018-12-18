@@ -30,6 +30,13 @@ public class StartStop : MonoBehaviour {
             rocket.GetComponent<RestartRocket>().SetActiveChildren(true);
             rocket.GetComponent<RocketThrust>().StartThrust();
         }
+        
+        var respawns = GameObject.FindGameObjectsWithTag("Respawn");
+        foreach (var respawn in respawns) {
+            foreach (Transform child in respawn.transform) {
+                child.gameObject.SetActive(true);
+            }
+        }
     }
 
     private void Stop() {
