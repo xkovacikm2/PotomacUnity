@@ -48,7 +48,6 @@ public class StartStop : MonoBehaviour
         foreach (var rocket in rockets)
         {
             rocket.GetComponent<RestartRocket>().ResetPositionRotation();
-            rocket.GetComponent<RocketThrust>().StopThrust();
         }
     }
 }

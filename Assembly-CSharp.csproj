@@ -55,6 +55,11 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\Scripts\BounceWall.cs" />
+    <Compile Include="Assets\Scripts\CameraController.cs" />
+    <Compile Include="Assets\Scripts\ClickHandlers\IOptionalActionable.cs" />
+    <Compile Include="Assets\Scripts\ClickHandlers\PlaceGameObject.cs" />
+    <Compile Include="Assets\Scripts\ClickHandlers\RemoveGameObject.cs" />
+    <Compile Include="Assets\Scripts\ClickHandlers\RotateGameObject.cs" />
     <Compile Include="Assets\Scripts\ClickHandlers\StartStop.cs" />
     <Compile Include="Assets\Scripts\Rockets\BounceRocket.cs" />
     <Compile Include="Assets\Scripts\Rockets\RestartRocket.cs" />
