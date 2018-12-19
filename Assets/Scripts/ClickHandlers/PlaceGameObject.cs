@@ -6,6 +6,9 @@ public class PlaceGameObject : MonoBehaviour {
     public GameObject placedObjectPrefab;
     public Material hoverMaterial;
     public IOptionalActionable optionalAction;
+    public float height;
+
+    private LevelAuthority authority;
     private GameObject placedObjectInstance;
     private bool isTriggered;
     private Material originalMaterial;
@@ -14,6 +17,7 @@ public class PlaceGameObject : MonoBehaviour {
         this.button.onClick.AddListener(OnClick);
         this.isTriggered = false;
         this.optionalAction = this.GetComponent(typeof(IOptionalActionable)) as IOptionalActionable;
+        this.authority = GameObject.Find("LevelAuthority").GetComponent<LevelAuthority>();
     }
 
     private void Update() {
@@ -31,11 +35,13 @@ public class PlaceGameObject : MonoBehaviour {
         RaycastHit hitInfo;
 
         if (!Physics.Raycast(ray, out hitInfo)) return;
-        var position = new Vector3(Mathf.Round(hitInfo.point.x), 0.5f, Mathf.Round(hitInfo.point.z));
+        var position = new Vector3(Mathf.Round(hitInfo.point.x), this.height, Mathf.Round(hitInfo.point.z));
         this.placedObjectInstance.transform.position = position;
     }
 
     private void PlaceObject() {
+        if (!this.authority.Debit(this.placedObjectInstance.GetComponent<Shoppable>().Price)) return;
+        
         this.placedObjectInstance.GetComponent<MeshRenderer>().material = this.originalMaterial;
         RemoveTrigger(false);
     }

@@ -4,6 +4,7 @@ using UnityEngine.UI;
 public class RemoveGameObject : MonoBehaviour {
     public Button button;
     private IRemovable previous;
+    private LevelAuthority authority;
     private bool isTriggered;
     
     // Start is called before the first frame update
@@ -11,6 +12,7 @@ public class RemoveGameObject : MonoBehaviour {
         this.isTriggered = false;
         this.button.onClick.AddListener(OnClick);
         this.previous = null;
+        this.authority = GameObject.Find("LevelAuthority").GetComponent<LevelAuthority>();
     }
 
     // Update is called once per frame
@@ -30,7 +32,11 @@ public class RemoveGameObject : MonoBehaviour {
         }
 
         if (Input.GetKeyDown(KeyCode.Mouse0)) {
-            removable?.RemoveFromScene();
+            if (removable != null) {
+                removable.RemoveFromScene();
+                this.authority.Credit(hitInfo.transform.GetComponent<Shoppable>().Price); 
+            }
+
             this.previous = null;
             this.isTriggered = false;
         }

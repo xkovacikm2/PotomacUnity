@@ -3,22 +3,22 @@ using UnityEngine.UI;
 
 public class StartStop : MonoBehaviour {
     public Button button;
-    private bool started;
+    private LevelAuthority authority;
 
     private void Start() {
-        button.onClick.AddListener(OnClick);
-        started = false;
+        this.button.onClick.AddListener(OnClick);
+        this.authority = GameObject.Find("LevelAuthority").GetComponent<LevelAuthority>();
     }
 
     private void OnClick() {
-        if (started) {
+        if (this.authority.LevelStarted) {
             Stop();
         }
         else {
             Run();
         }
 
-        started = !started;
+        this.authority.LevelStarted = !this.authority.LevelStarted;
     }
 
     private void Run() {
@@ -27,15 +27,8 @@ public class StartStop : MonoBehaviour {
 
         var rockets = GameObject.FindGameObjectsWithTag("Rocket");
         foreach (var rocket in rockets) {
-            rocket.GetComponent<RestartRocket>().SetActiveChildren(true);
             rocket.GetComponent<RocketThrust>().StartThrust();
-        }
-        
-        var respawns = GameObject.FindGameObjectsWithTag("Respawn");
-        foreach (var respawn in respawns) {
-            foreach (Transform child in respawn.transform) {
-                child.gameObject.SetActive(true);
-            }
+            rocket.GetComponent<RestartRocket>().SetActiveChildren(true);
         }
     }
 
@@ -46,6 +39,19 @@ public class StartStop : MonoBehaviour {
         var rockets = GameObject.FindGameObjectsWithTag("Rocket");
         foreach (var rocket in rockets) {
             rocket.GetComponent<RestartRocket>().ResetPositionRotation();
+            rocket.GetComponent<RestartRocket>().SetActiveChildren(true);
+        }
+        
+        var deletables = GameObject.FindGameObjectsWithTag("DeleteOnRestart");
+        foreach (var deletable in deletables) {
+            Destroy(deletable);
+        }
+         
+        var respawns = GameObject.FindGameObjectsWithTag("Respawn");
+        foreach (var respawn in respawns) {
+            foreach (Transform child in respawn.transform) {
+                child.gameObject.SetActive(true);
+            }
         }
     }
 }

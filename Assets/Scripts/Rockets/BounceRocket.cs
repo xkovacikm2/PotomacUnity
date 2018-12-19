@@ -4,7 +4,7 @@ public class BounceRocket : MonoBehaviour
 {
     public float CorrectionThreshold = 0.5f;
 
-    public void DoBounceRocket(Vector3 reflection)
+    public virtual void DoBounceRocket(Vector3 reflection)
     {
         var rigidBody = GetComponent<Rigidbody>();
         var correctedReflection = CorrectReflection(reflection);

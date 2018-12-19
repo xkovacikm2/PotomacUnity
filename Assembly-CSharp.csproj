@@ -56,7 +56,6 @@
   <ItemGroup>
     <Compile Include="Assets\Imported\FireExplosionVFX\Scripts\FxSplash.cs" />
     <Compile Include="Assets\Imported\FireExplosionVFX\Scripts\LaunchEffect.cs" />
-    <Compile Include="Assets\Scripts\BounceWall.cs" />
     <Compile Include="Assets\Scripts\BuildingController.cs" />
     <Compile Include="Assets\Scripts\CameraController.cs" />
     <Compile Include="Assets\Scripts\ClickHandlers\IOptionalActionable.cs" />
@@ -66,10 +65,18 @@
     <Compile Include="Assets\Scripts\ClickHandlers\RemoveGameObject.cs" />
     <Compile Include="Assets\Scripts\ClickHandlers\RotateGameObject.cs" />
     <Compile Include="Assets\Scripts\ClickHandlers\StartStop.cs" />
+    <Compile Include="Assets\Scripts\LevelAuthority.cs" />
+    <Compile Include="Assets\Scripts\Platforms\BounceWall.cs" />
+    <Compile Include="Assets\Scripts\Platforms\Disposer.cs" />
+    <Compile Include="Assets\Scripts\Platforms\Shoppable.cs" />
+    <Compile Include="Assets\Scripts\Platforms\SlowingPlatform.cs" />
+    <Compile Include="Assets\Scripts\Rockets\BounceFastRocket.cs" />
     <Compile Include="Assets\Scripts\Rockets\BounceRocket.cs" />
     <Compile Include="Assets\Scripts\Rockets\ExplodeRocket.cs" />
+    <Compile Include="Assets\Scripts\Rockets\FastRocketThrust.cs" />
     <Compile Include="Assets\Scripts\Rockets\RestartRocket.cs" />
     <Compile Include="Assets\Scripts\Rockets\RocketThrust.cs" />
+    <Compile Include="Assets\Scripts\SpinController.cs" />
     <None Include="Assets\Imported\Missile\Doc\ReadMe.txt" />
     <Reference Include="Unity.TextMeshPro.Editor">
       <HintPath>C:/Users/Z003ZR2J/Documents/personal/navph/potomac/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>

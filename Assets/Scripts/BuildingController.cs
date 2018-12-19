@@ -1,11 +1,12 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 
-public class BuildingController : MonoBehaviour
-{
+public class BuildingController : MonoBehaviour {
     private void OnCollisionEnter(Collision other) {
-        other.transform.GetComponent<ExplodeRocket>()?.Explode();
-        this.gameObject.SetActive(false);
+        var explode = other.transform.GetComponent<ExplodeRocket>();
+        
+        if (explode != null) {
+            explode.Explode();
+            this.gameObject.SetActive(false);
+        }
     }
 }
