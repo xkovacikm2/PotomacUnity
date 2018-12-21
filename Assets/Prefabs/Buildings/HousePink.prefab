@@ -10,8 +10,8 @@ GameObject:
   m_Component:
   - component: {fileID: 1890838394263844463}
   m_Layer: 0
-  m_Name: Building_M_prefab
-  m_TagString: Untagged
+  m_Name: HousePink
+  m_TagString: Respawn
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -42,6 +42,7 @@ GameObject:
   - component: {fileID: 6886397378633815869}
   - component: {fileID: 668107832034093895}
   - component: {fileID: 4928858553161382579}
+  - component: {fileID: 2362795672561898379}
   - component: {fileID: 5543982585326412355}
   m_Layer: 0
   m_Name: Building_M
@@ -117,6 +118,18 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+--- !u!114 &2362795672561898379
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7007312366870596293}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f87620ff9d9266b4bbf98b1142a6ecde, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!64 &5543982585326412355
 MeshCollider:
   m_ObjectHideFlags: 0

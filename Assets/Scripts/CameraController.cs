@@ -16,7 +16,7 @@ public class CameraController : MonoBehaviour {
             transform.Translate(Vector3.right * cameraSpeed * Time.deltaTime, Space.Self);
         }
 
-        if ((Input.mousePosition.y <= 0 || Input.GetKeyDown(KeyCode.DownArrow)) && transform.position.z > -this.maxY) {
+        if ((Input.mousePosition.y <= 20 || Input.GetKeyDown(KeyCode.DownArrow)) && transform.position.z > -this.maxY) {
             transform.Translate(Vector3.back * cameraSpeed * Time.deltaTime, Space.World);
         }
 

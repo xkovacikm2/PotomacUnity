@@ -60,6 +60,7 @@
     <Compile Include="Assets\Scripts\BuildingController.cs" />
     <Compile Include="Assets\Scripts\CameraController.cs" />
     <Compile Include="Assets\Scripts\ClickHandlers\CloseWindow.cs" />
+    <Compile Include="Assets\Scripts\ClickHandlers\Exit.cs" />
     <Compile Include="Assets\Scripts\ClickHandlers\IOptionalActionable.cs" />
     <Compile Include="Assets\Scripts\ClickHandlers\IRemovable.cs" />
     <Compile Include="Assets\Scripts\ClickHandlers\LevelPicker.cs" />
