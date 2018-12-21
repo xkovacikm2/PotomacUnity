@@ -3,25 +3,29 @@
 public class RocketThrust : MonoBehaviour {
     public float speed;
 
-    private void Update() {
-        BeforeUpdate();
-        
-        var rigidBody = GetComponent<Rigidbody>();
+    private void Start() {
+        Physics.IgnoreLayerCollision(9, 9);
+    }
 
+    private void Update() {
+        var rigidBody = GetComponent<Rigidbody>();
+        
         if (rigidBody.velocity.magnitude > 0) {
+            BeforeUpdate();
+
             transform.rotation = Quaternion.Slerp(transform.rotation,
                 Quaternion.LookRotation(rigidBody.velocity.normalized), 0.2f);
         }
-
-        AfterUpdate();
     }
+
+    // Rockets ignore each other
+//    private void OnCollisionEnter(Collision other) {
+//        if (other.gameObject.GetComponent<RocketThrust>() != null) {
+//            Physics.IgnoreCollision(other.collider, this.GetComponent<Collider>());
+//        }
+//    }
 
     protected virtual void BeforeUpdate() {
-        
-    }
-
-    protected virtual void AfterUpdate() {
-        
     }
 
     public void StartThrust() {

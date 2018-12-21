@@ -8,19 +8,19 @@ public class CameraController : MonoBehaviour {
     public float maxY;
 
     private void Update() {
-        if (Input.mousePosition.x <= 0 && transform.position.x > -this.maxX) {
+        if ((Input.mousePosition.x <= 0 || Input.GetKeyDown(KeyCode.LeftArrow)) && transform.position.x > -this.maxX) {
             transform.Translate(Vector3.left * cameraSpeed * Time.deltaTime, Space.Self);
         }
 
-        if (Input.mousePosition.x >= Screen.width && transform.position.x < this.maxX) {
+        if ((Input.mousePosition.x >= Screen.width || Input.GetKeyDown(KeyCode.RightArrow)) && transform.position.x < this.maxX) {
             transform.Translate(Vector3.right * cameraSpeed * Time.deltaTime, Space.Self);
         }
 
-        if (Input.mousePosition.y <= 0 && transform.position.z > -this.maxY) {
+        if ((Input.mousePosition.y <= 0 || Input.GetKeyDown(KeyCode.DownArrow)) && transform.position.z > -this.maxY) {
             transform.Translate(Vector3.back * cameraSpeed * Time.deltaTime, Space.World);
         }
 
-        if (Input.mousePosition.y >= Screen.height && transform.position.z < this.maxY) {
+        if ((Input.mousePosition.y >= Screen.height || Input.GetKeyDown(KeyCode.UpArrow)) && transform.position.z < this.maxY) {
             transform.Translate(Vector3.forward * cameraSpeed * Time.deltaTime, Space.World);
         }
 

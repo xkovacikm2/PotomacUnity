@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 129789331}
   - component: {fileID: 129789333}
   - component: {fileID: 129789332}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Range extension kit.003
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -86,7 +86,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 291930214}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: model
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -125,7 +125,7 @@ GameObject:
   - component: {fileID: 300795154}
   - component: {fileID: 300795156}
   - component: {fileID: 300795155}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Bomb and fuze
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -204,7 +204,7 @@ GameObject:
   - component: {fileID: 612221315}
   - component: {fileID: 612221314}
   - component: {fileID: 612221313}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: fire
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5014,7 +5014,7 @@ GameObject:
   - component: {fileID: 686593546}
   - component: {fileID: 686593548}
   - component: {fileID: 686593547}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Guidance kit
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5091,7 +5091,7 @@ GameObject:
   - component: {fileID: 910429216}
   - component: {fileID: 910429218}
   - component: {fileID: 910429217}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Range extension kit.001
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5172,7 +5172,7 @@ GameObject:
   - component: {fileID: 1521030221}
   - component: {fileID: 4765262646266477586}
   - component: {fileID: 1521030225}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: SimpleRocket
   m_TagString: Rocket
   m_Icon: {fileID: 0}
@@ -5265,8 +5265,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   explosionObject: {fileID: 296745824284678965, guid: 6c3eb2f6df4142c499c19e4bf9fe6c4f,
     type: 3}
-  disposalTime: 3
-  disposalSpeed: 1
+  disposalTime: 1
+  disposalSpeed: 2
 --- !u!114 &1521030225
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5290,7 +5290,7 @@ GameObject:
   - component: {fileID: 1770273219}
   - component: {fileID: 1770273221}
   - component: {fileID: 1770273220}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Range extension kit.004
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5367,7 +5367,7 @@ GameObject:
   - component: {fileID: 1819166446}
   - component: {fileID: 1819166448}
   - component: {fileID: 1819166447}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: smoke
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -10056,7 +10056,7 @@ GameObject:
   - component: {fileID: 1831087849}
   - component: {fileID: 1831087851}
   - component: {fileID: 1831087850}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Range extension kit
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -10133,7 +10133,7 @@ GameObject:
   - component: {fileID: 1848140539}
   - component: {fileID: 1848140541}
   - component: {fileID: 1848140540}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Range extension kit.002
   m_TagString: Untagged
   m_Icon: {fileID: 0}
