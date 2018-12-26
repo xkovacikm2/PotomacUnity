@@ -24,8 +24,8 @@ public class ExplodeRocket : MonoBehaviour {
         }
 
         this.disposalTimeElapsed += Time.deltaTime;
-        this.transform.Rotate(this.transform.right, (90/this.disposalTime) * Time.deltaTime);
-        this.transform.Translate(this.transform.forward * this.disposalSpeed * Time.deltaTime);
+        this.transform.Rotate(Vector3.right, (90/this.disposalTime) * Time.deltaTime, Space.World);
+        this.transform.Translate(Vector3.down * this.disposalSpeed * Time.deltaTime, Space.World);
     }
 
     public void Explode() {

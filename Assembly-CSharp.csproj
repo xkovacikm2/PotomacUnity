@@ -85,6 +85,9 @@
     <Compile Include="Assets\Scripts\Rockets\RocketThrust.cs" />
     <Compile Include="Assets\Scripts\SpinController.cs" />
     <None Include="Assets\Imported\Missile\Doc\ReadMe.txt" />
+    <None Include="Assets\Imported\ZRNAssets\005030_06196_1_1\Shaders\su_Zmap_river02.shader" />
+    <None Include="Assets\Imported\ZRNAssets\005030_06196_1_1\Shaders\su_Zmap_DoubleSide.shader" />
+    <None Include="Assets\Imported\ZRNAssets\005030_06196_1_1\Shaders\su_Zmap_way.shader" />
     <Reference Include="Unity.TextMeshPro.Editor">
       <HintPath>/home/kovko/Documents/FIIT/napvh-potomac/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
     </Reference>
